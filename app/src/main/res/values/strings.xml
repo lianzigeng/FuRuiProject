@@ -1,3 +1,16 @@
 <resources>
     <string name="app_name">FuRuiProject</string>
+
+    <string name="main_desc">Colorbox炫彩魔盒</string>
+    <string name="main_welcome">欢迎使用炫彩魔盒智能结算台</string>
+    <string name="main_tips_first">请将所有商品</string>
+    <!--\u3000 半角空格 ,中文符号, \u0020 全角空格 英文符号-->
+    <string name="main_tips_second">正面放置\u3000\u3000请勿堆叠</string>
+    <string name="recognition_prompt">已检测到商品,正在检测,请稍后\u2026</string>
+    <string name="goods_type">商品/LTEM(s)</string>
+    <string name="goods_number">数量/QTY</string>
+    <string name="goods_price">单价/PRICE</string>
+    <string name="goods_tips_first">请勿堆叠</string>
+    <string name="goods_tips_second">商品请靠中间摆放</string>
+    <string name="goods_tips_third">多商品时请分批次摆放</string>
 </resources>

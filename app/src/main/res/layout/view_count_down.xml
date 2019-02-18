@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <TextView
+            android:id="@+id/tv_count_number"
+            android:layout_width="400px"
+            android:layout_height="400px"
+            android:layout_marginTop="200px"
+            android:layout_centerHorizontal="true"
+            android:background="@mipmap/ic_launcher"
+            android:text="3"
+            android:gravity="center"
+            android:textSize="100px"
+            android:textColor="@color/colorBlack"/>
+    <android.support.v7.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="100px"
+            app:cardElevation="10px"
+            app:cardCornerRadius="24px"
+            android:layout_height="wrap_content">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="30px"
+                android:textColor="@color/colorBlack"
+                android:text="@string/recognition_prompt"
+                android:padding="10px"
+        />
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>
