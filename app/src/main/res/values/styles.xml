@@ -6,6 +6,25 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowAnimationStyle">@style/AnimationStyle</item>
+
+    </style>
+
+    <style name="AnimationStyle" parent="@android:style/Animation.Activity">
+        <!--A 启动B A从屏幕上消失执行的动画-->
+        <item name="android:activityOpenExitAnimation">@anim/anim_activity_left_out</item>
+        <!--a 启动b b出现在屏幕上 执行b 的进入动画-->
+        <item name="android:activityOpenEnterAnimation">@anim/anim_activity_right_in</item>
+        <!--b 返回a b 从屏幕上消失 执行b 的退出动画-->
+        <item name="android:activityCloseExitAnimation">@anim/anim_activity_right_out</item>
+        <!--b 返回a a 出现在屏幕上 a 的进入动画-->
+        <item name="android:activityCloseEnterAnimation">@anim/anim_activity_left_in</item>
+    </style>
+
+    <style name="DialogStyle" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/anim_dialog_in</item>
+        <item name="android:windowExitAnimation">@anim/anim_dialog_out</item>
+        <item name="android:gravity">center</item>
     </style>
 
 </resources>

@@ -12,6 +12,7 @@
             android:textStyle="bold"
             android:layout_centerVertical="true"
             android:textColor="@color/colorOrange"
+            android:layout_marginLeft="@dimen/dp_10"
             android:text="瓜子"/>
 
     <TextView
@@ -22,7 +23,8 @@
             android:layout_centerVertical="true"
             android:textColor="@color/colorOrange"
             android:layout_centerHorizontal="true"
-            android:textSize="64px"
+            android:paddingLeft="@dimen/dp_10"
+            android:textSize="50px"
             android:text="x 5"/>
 
     <TextView
@@ -31,9 +33,10 @@
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
             android:textStyle="bold"
-            android:textSize="64px"
+            android:textSize="50px"
             android:layout_alignParentEnd="true"
             android:textColor="@color/colorOrange"
+            android:layout_marginRight="@dimen/dp_10"
             android:text="130.0元"/>
 
 </RelativeLayout>

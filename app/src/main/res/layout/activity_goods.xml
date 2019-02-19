@@ -18,6 +18,10 @@
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent">
+
+        <Button android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="添加" android:id="@+id/btn_add"
+        />
         <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -57,77 +61,32 @@
 
             </LinearLayout>
 
+            <!--scrollbarStyle 滑动条的位置,
+             scrollbarThumbVertical 短条(短条的长度和数据的数量有关,数量越大,长度越小)
+              scrollbarTrackVertical 长条-->
             <android.support.v7.widget.RecyclerView
                     android:id="@+id/rv_goods_data"
                     android:layout_weight="1"
                     android:layout_width="match_parent"
-                    android:scrollbars="vertical"
-                    android:layout_height="0dp"/>
-
-            <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="100px">
-
-                <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="待支付:4种"
-                        android:layout_weight="1"
-                        android:textColor="@color/colorBlack"
-                        android:textSize="60px"
-                />
-
-                <TextView
-                        android:layout_weight="1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="待支付金额:40元"
-                        android:textColor="@color/colorBlack"
-                        android:textSize="60px"
-                />
-            </LinearLayout>
-
-            <android.support.v7.widget.CardView
-                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    app:cardCornerRadius="@dimen/dp_10"
-                    android:layout_marginBottom="@dimen/dp_10">
-                <LinearLayout
-                        android:layout_width="match_parent"
-                        android:background="@color/colorOrange"
-                        android:paddingLeft="100px"
-                        android:paddingRight="100px"
-                        android:paddingTop="10px"
-                        android:paddingBottom="10px"
-                        android:layout_height="wrap_content">
-                    <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_weight="1"
-                            android:layout_height="wrap_content"
-                            android:drawableLeft="@drawable/drawable_rect"
-                            android:text="@string/goods_tips_first"
-                            android:gravity="center_vertical"
-                            android:textColor="@color/colorBlack"/>
+                    android:layoutAnimation="@anim/layout_animation_fall_down"
+                    android:scrollbars="vertical"
+                    android:fadeScrollbars="false"
+                    android:scrollbarSize="@dimen/dp_10"
+                    android:scrollbarStyle="outsideInset"
+                    android:scrollbarThumbVertical="@drawable/drawable_scroll_bar_thumb"
+                    android:scrollbarTrackVertical="@drawable/drawable_scroll_bar_track"
+            />
 
-                    <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:gravity="center_vertical"
-                            android:drawableLeft="@drawable/drawable_rect"
-                            android:text="@string/goods_tips_second"
-                            android:textColor="@color/colorBlack"/>
+            <include layout="@layout/view_common_pay"
+                     android:layout_width="match_parent"
+                     android:layout_height="100px"/>
 
-                    <TextView
-                            android:layout_weight="1"
-                            android:drawableLeft="@drawable/drawable_rect"
-                            android:layout_width="wrap_content"
-                            android:gravity="center_vertical"
-                            android:layout_height="wrap_content"
-                            android:text="@string/goods_tips_third"
-                            android:textColor="@color/colorBlack"/>
-                </LinearLayout>
-            </android.support.v7.widget.CardView>
+            <include layout="@layout/view_common_tips"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_marginBottom="@dimen/dp_10"
+            />
 
         </LinearLayout>
 

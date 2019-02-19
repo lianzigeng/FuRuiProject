@@ -26,9 +26,16 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".GoodsActivity"
-                  android:screenOrientation="landscape"
+
+        <activity
+                android:name=".GoodsActivity"
+                android:configChanges="orientation|keyboard|keyboardHidden|screenSize"
+                android:screenOrientation="landscape">
+        </activity>
+
+        <activity android:name=".PayActivity"
                   android:configChanges="orientation|keyboard|keyboardHidden|screenSize"
+                  android:screenOrientation="landscape"
         >
         </activity>
     </application>

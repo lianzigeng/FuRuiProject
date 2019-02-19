@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent" android:layout_height="match_parent"
+        app:cardCornerRadius="@dimen/dp_10"
+>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:background="@color/colorOrange"
+            android:paddingLeft="100px"
+            android:paddingRight="100px"
+            android:paddingTop="10px"
+            android:paddingBottom="10px"
+            android:layout_height="wrap_content">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/drawable_rect"
+                android:text="@string/goods_tips_first"
+                android:gravity="center_vertical"
+                android:textColor="@color/colorBlack"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:drawableLeft="@drawable/drawable_rect"
+                android:text="@string/goods_tips_second"
+                android:textColor="@color/colorBlack"/>
+
+        <TextView
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/drawable_rect"
+                android:layout_width="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_height="wrap_content"
+                android:text="@string/goods_tips_third"
+                android:textColor="@color/colorBlack"/>
+    </LinearLayout>
+</android.support.v7.widget.CardView>
